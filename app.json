@@ -1,16 +1,37 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/my/my",
+    "pages/study/study"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor":"#e64340",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e64340",
     "navigationBarTitleText": "智慧党建平台",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
-  "usingComponents": {
-    "i-tab-bar": "../dist/tab-bar/index",
-    "i-tab-bar-item": "../dist/tab-bar-item/index"
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "text":"首页",
+        "iconPath":"resource/images/barhome.png",
+        "selectedIconPath":"resource/images/barhomeon.png"
+      },
+      {
+        "pagePath":"pages/study/study",
+        "text":"学习",
+        "iconPath":"resource/images/bareduhome.png",
+        "selectedIconPath":"resource/images/bareduhomeon.png"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "text":"个人中心",
+        "iconPath":"resource/images/barmy.png",
+        "selectedIconPath":"resource/images/barmyon.png"
+      }
+
+    ]
   }
 }

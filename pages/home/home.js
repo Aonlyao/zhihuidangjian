@@ -55,7 +55,57 @@ const app = getApp()
 
 Page({
   data: {
-    current: 'homepage'
+    current: 'homepage',
+    "usingComponents": {
+      "i-row": "../../dist/row/index",
+      "i-col": "../../dist/col/index"
+    },
+    imgUrls: [
+      app.globalData.imgUrl+'/banner01.jpg',
+      app.globalData.imgUrl+'/banner02.jpg'
+    ],
+    menuItems: [
+      {
+        iconUrl: app.globalData.imgUrl +"/bararthomeon.png",
+        title:"组工动态"
+      },
+      {
+        iconUrl:app.globalData.imgUrl+"/home-notice.png",
+        title:"通知公告"
+      },
+      {
+        iconUrl: app.globalData.imgUrl +"/home-intrank.png",
+        title:'党员风采'
+      },
+      {
+        iconUrl: app.globalData.imgUrl +"/home-bbshome.png",
+        title:"支部论坛"
+      },
+      {
+        iconUrl: app.globalData.imgUrl +"/home-expense.png",
+        title:"党费缴纳"
+      },
+      {
+        iconUrl: app.globalData.imgUrl +"/home-exahome.png",
+        title:"在线考试"
+      },
+      {
+        iconUrl: app.globalData.imgUrl +"/home-eduhome.png",
+        title:"微党课"
+      },
+      {
+        iconUrl: app.globalData.imgUrl +"/barexahomeon.png",
+        title:"资料提交"
+      },
+      {
+        iconUrl: app.globalData.imgUrl +"/my-aboutus.png",
+        title:"政策法规"
+      },
+      {
+        iconUrl: app.globalData.imgUrl +"/home-mybranch.png",
+        title:"更多"
+      }
+    ]
   },
 
   handleChange({ detail }) {

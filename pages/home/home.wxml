@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="page" >
+<!-- 首页轮播部分 -->
+<swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500" indicator-active-color="#fff" circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="320"/>
+    </swiper-item>
+  </block>
+</swiper>
+  <!-- 顶部菜单menu部分 -->
+  <view class="menu">
+    <view class="menu_item" wx:for="{{menuItems}}" wx:key="{{item.index}}">
+      <image src="{{item.iconUrl}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+  <!-- 组工动态部分 -->
+  <view class='newsInfo'>
+    <view class='newsTitle'>
+      <text class='title'>组工动态</text>
+      <text>更多</text>
+    </view>
+    <view class='newsItems'>
+      <view class='newsContent'>
+        <image src='' class='newsImg'></image>
+        <view class='newsSummary'>
+          <text>全民一起学习雷锋好榜样，让社会变得更美好</text>
+          <text class='dateStyle'>2019-02-01</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

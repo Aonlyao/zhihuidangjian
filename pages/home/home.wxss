@@ -1,0 +1,83 @@
+/* home css */
+/*  整体样式 */
+.page{
+  background: #f2f2f2;
+  font-size: 12px;
+}
+
+/* 轮播图 */
+.slide_image{
+  width: 100%;
+  height: 100%;
+}
+/* 菜单导航栏 */
+.menu{
+height: 120px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 10px;
+background: white;
+box-shadow: 2px 3px 4px #d9d9d9;
+}
+.menu_item{
+  width: 52px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_item image{
+  width: 25px;
+  height: 25px;
+}
+.menu_item text{
+  padding-top: 5px;
+}
+/* 组工动态展示 */
+.newsInfo{
+  height: 200px;
+  background-color: white;
+  margin: 10px 0;
+  border: 1px solid red;
+}
+.newsTitle{
+  display: flex;
+  margin: 10px 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 2px solid #ff0000;
+}
+.title{
+  font-size: 14px;
+  margin-left: 5px;
+}
+.newsContent{
+  width: 95%;
+  height: 80px;
+  margin: 5px auto;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.newsImg{
+  width: 90px;
+  height: 70px;
+  border: 1px solid yellow;
+}
+.newsSummary{
+  width: 180px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid green;
+}
+.dateStyle{
+  color: #acacac;
+  font-size: 12px;
+}
