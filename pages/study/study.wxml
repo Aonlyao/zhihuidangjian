@@ -1,2 +1,37 @@
 <!--pages/study/study.wxml-->
-<text>pages/study/study.wxml</text>
+<view class='studyPage'>
+  <image src='{{studyBannerUrl}}' class='bannerImg'></image>
+  <!-- menu部分 -->
+  <view class='studyMenu'>
+    <view class="menu_item" wx:for="{{ studyMenuItems}}" wx:key="{{item.index}}">
+      <image src="{{item.iconUrl}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 最新课程部分 -->
+  <view class='newClass'>
+    <view class='classTitle'>
+      <text class='title'>最新课程</text>
+      <text>更多</text>
+    </view>
+    <view class='classItems'>
+      <view class='classContent'wx:for="{{classItems}}" wx:key="{{item.index}}">
+        <image src="{{item.classImgUrl}}" class='classImg'></image>
+        <text>{{item.classTitle}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 政策法规部分 -->
+  <view class='ruleInfo'>
+    <view class='classTitle'>
+      <text class='title'>政策法规</text>
+      <text>更多</text>
+    </view>
+    <view class='ruleItems'>
+      <view class='ruleContent'wx:for="{{ruleItems}}" wx:key="{{item.index}}">
+        <text>{{item.ruleTitle}}</text>
+        <text class='dateStyle'>{{item.ruleTime}}</text>
+      </view>
+    </view>
+  </view>
+</view>
