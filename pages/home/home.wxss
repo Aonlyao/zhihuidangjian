@@ -36,10 +36,10 @@ box-shadow: 2px 3px 4px #d9d9d9;
 }
 /* 组工动态展示 */
 .newsInfo{
-  height: 200px;
+  height: 210px;
   background-color: white;
   margin: 10px 0;
-  border: 1px solid red;
+  padding-top: 5px;
 }
 .newsTitle{
   display: flex;
@@ -56,15 +56,14 @@ box-shadow: 2px 3px 4px #d9d9d9;
   width: 95%;
   height: 80px;
   margin: 5px auto;
-  border: 1px solid blue;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid #d9d9d9;
 }
 .newsImg{
   width: 90px;
   height: 70px;
-  border: 1px solid yellow;
 }
 .newsSummary{
   width: 180px;
@@ -75,7 +74,6 @@ box-shadow: 2px 3px 4px #d9d9d9;
   align-items: left;
   font-size: 14px;
   padding: 10px;
-  border: 1px solid green;
 }
 .dateStyle{
   color: #acacac;

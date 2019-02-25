@@ -24,11 +24,28 @@
       <text>更多</text>
     </view>
     <view class='newsItems'>
-      <view class='newsContent'>
-        <image src='' class='newsImg'></image>
+      <view class='newsContent'wx:for="{{newsItems}}" wx:key="{{item.index}}">
+        <image src="{{item.newsImgUrl}}" class='newsImg'></image>
         <view class='newsSummary'>
-          <text>全民一起学习雷锋好榜样，让社会变得更美好</text>
-          <text class='dateStyle'>2019-02-01</text>
+          <text>{{item.newsTitle}}</text>
+          <text class='dateStyle'>{{item.newsTime}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+   <!-- 通知公告部分 -->
+  <view class='newsInfo'>
+    <view class='newsTitle'>
+      <text class='title'>通知公告</text>
+      <text>更多</text>
+    </view>
+    <view class='newsItems'>
+      <view class='newsContent'wx:for="{{newsItems}}" wx:key="{{item.index}}">
+        <image src="{{item.newsImgUrl}}" class='newsImg'></image>
+        <view class='newsSummary'>
+          <text>{{item.newsTitle}}</text>
+          <text class='dateStyle'>{{item.newsTime}}</text>
         </view>
       </view>
     </view>

@@ -105,6 +105,18 @@ Page({
         iconUrl: app.globalData.imgUrl +"/home-mybranch.png",
         title:"更多"
       }
+    ],
+    newsItems:[
+      {
+        newsImgUrl: app.globalData.imgUrl +'/news01.png',
+        newsTitle:'开展“两学一做”教育，争做合格党员',
+        newsTime:'2019-02-01'
+      },
+      {
+        newsImgUrl: app.globalData.imgUrl + '/news02.png',
+        newsTitle: '弘扬雷锋精神，推动社会主义核心价值体系建设',
+        newsTime: '2019-02-05'
+      }
     ]
   },
 
