@@ -1,2 +1,23 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+
+<view class='myPage'>
+  <view class='topInfo'>
+    <image src='' class='userIcon'></image>
+    <view class='userInfo'>
+      <text class='userName'>叶子 <text class='jionTime'>2018年6月9日  入党</text></text>
+      <text>信息工程学院学生一支部</text>
+    </view>
+  </view>
+
+  <view class='mySelect'>
+    <view class='selectItem'>
+      <text class='selectTitle'>党费缴纳</text>
+    </view>
+     <view class='selectItem'>
+      <text class='selectTitle'>个人档案</text>
+    </view>
+     <view class='selectItem'>
+      <text class='selectTitle'>建议信箱</text>
+    </view>
+  </view>
+</view>
