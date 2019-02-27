@@ -1,6 +1,6 @@
 {
   "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#e64340",
+  "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTitleText": "个人",
-  "navigationBarTextStyle": "white"
+  "navigationBarTextStyle": "black"
 }

@@ -36,7 +36,7 @@ App({
   globalData: {
     userInfo: null,
     serverUrl:"http://120.79.231.162:8080",
-    imgUrl:"http://120.79.231.162:8080/res/media/images",
+    imgUrl:"http://120.79.231.162:8080/resources/media/images",
 
   }
 })
